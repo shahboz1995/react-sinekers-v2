@@ -71,12 +71,16 @@ color: #000000;
   cursor: pointer;
 
 }
-.liked{
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  border: 1px solid #F2F2F2;
-  background-image: url"../../../public/img/liked.svg";
+.red{
+  position: absolute;
+  top: 1.8rem;
+  left: 2.2rem;
+  color: red;
+
+  /* background-color: red; */
+  cursor: pointer;
+  /* color: red; */
+  /* background-image: url"../../../public/img/liked.svg"; */
 }
 .plusButton{
   width: 32px;
