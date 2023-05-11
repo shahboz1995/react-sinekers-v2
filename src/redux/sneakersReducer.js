@@ -1,5 +1,6 @@
 const initialState = {
   isLoading: false,
+  allSneakers: [],
   favorites: [],
 };
 
