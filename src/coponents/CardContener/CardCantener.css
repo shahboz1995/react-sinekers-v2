@@ -1,0 +1,11 @@
+.cardContener{
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  row-gap: 2.5rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  column-gap: 2.4rem;
+  padding: 20px;
+  /* border: 1px  solid red; */
+}
