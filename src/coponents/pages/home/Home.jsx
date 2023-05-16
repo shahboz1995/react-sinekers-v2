@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
-import { Wrapper,Header,Sorch,Card } from "../../index";
+import { Wrapper,Header,Sorch, } from "../../index";
 import { CardCantener } from '../../CardContener/CardCantener'
-import data from '../../../data';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchItems } from '../../../redux/thunk';
 
@@ -9,13 +8,12 @@ import { fetchItems } from '../../../redux/thunk';
 
 export const Home = () => {
 
-  const {allSneakers} = data;
-  const state = useSelector((state) => state);
+  const {allSneakers} = useSelector((state) => state);
   const dispatch = useDispatch()
-  // console.log(state);
+  console.log(allSneakers);
 
   useEffect (()=>{
-    dispatch(fetchItems())
+    dispatch(fetchItems("http://localhost:5000/allSneakers", `SAVE_ALL_SNEAKERS`))
   },[])
 
 
