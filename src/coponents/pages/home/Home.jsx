@@ -23,6 +23,8 @@ export const Home = () => {
     <div className='homeCantener'>
       <Wrapper>
       <Header/>
+      </Wrapper>
+      <Wrapper>
       <Sorch/>
       <CardCantener items={allSneakers}/>
       </Wrapper>
